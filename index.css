@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 20px;
-    background: #2c3e50;
+    background: #ffffff;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ h1 {
 }
 
 #score {
-    color: #f39c12;
+    color: #118b48;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -23,7 +23,7 @@ h1 {
 .area {
     width: 400px;
     height: 400px;
-    background: #34495e;
+    background: #775a5a;
     position: relative;
     border: 3px solid white;
 }
@@ -31,7 +31,7 @@ h1 {
 .runner {
     width: 40px;
     height: 40px;
-    background: #2ecc71;
+    background: #000000;
     position: absolute;
     border-radius: 5px;
 }
