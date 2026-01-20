@@ -1,59 +1,97 @@
-.area{
+body {
+    margin: 0;
+    padding: 20px;
+    background: #2c3e50;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+#score {
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.area {
     width: 400px;
     height: 400px;
-    border: 1px solid;
-    margin: auto;
+    background: #34495e;
     position: relative;
-    overflow: hidden;
-    margin-top: 130px;
-}
-.runner{
-    width: 40px;
-    height: 40px;
-    background: #51f730;
-    position: absolute;
-    filter: drop-shadow(0 4px 5px rgb(217, 216, 216));
-    /* transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1); */
-}
-.non{
-    width: 40px;
-    height: 40px;
-    background: #b89a13;
-    position: absolute;
-    filter: drop-shadow(0 4px 5px rgb(217, 216, 216));
-    /* transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    border: 3px solid white;
 }
 
-.con{
-    width: 300px;
-    margin: auto;
-    /* background-color: red; */
-    position: relative;
-    height: 90px;
-}
-#right{
-    /* margin-left: 30px; */
-
-}
-button{
-    width: 70px;
+.runner {
+    width: 40px;
     height: 40px;
+    background: #2ecc71;
     position: absolute;
+    border-radius: 5px;
 }
-#top{
-    top: 0;
-    left: 40%;
+
+.non {
+    width: 40px;
+    height: 40px;
+    background: #e74c3c;
+    position: absolute;
+    border-radius: 50%;
 }
-#bottom{
-    bottom: 0;
-    left: 40%;
+
+.con {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
 }
-#right{
-   
-    top: 30%;
-    right: 30px;
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
-#left{
-    top: 30%;
-    left: 40px;
+
+button:hover {
+    background: #2980b9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#top {
+    grid-column: 2;
+}
+
+#left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#gameOver {
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,40 @@
         <button id="top" onclick="tepa()" >Up</button>
         <button id="bottom" onclick="bottom()">Down</button>
     </div>
+    <script src="main.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>🐍 Snake O'yini</h1>
+    <div id="score">Ball: 0</div>
+    
+    <div class="area" id="area">
+        <div class="runner" id="kv"></div>
+        <div class="non" id="non"></div>
+    </div>
+
+    <div id="gameOver">
+        <p>O'yin tugadi!</p>
+        <p>Sizning ballingiz: <span id="finalScore"></span></p>
+    </div>
+
+    <div class="con">
+        <button id="top" onclick="tepa()">↑</button>
+        <button id="left" onclick="left()">←</button>
+        <button id="right" onclick="right()">→</button>
+        <button id="bottom" onclick="bottom()">↓</button>
+    </div>
+
     <script src="main.js"></script>
 </body>
 </html>
